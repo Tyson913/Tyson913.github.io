@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("e7db68fb084d881f9d7e05d1eb346add.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding-top: 18%;
+    text-align: center;
+    font-weight: 600;
+    color: #6e026e;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #6e026e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.container2 {
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #6e026e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+}
+.container2 h4 {
+    text-align: center;
+
+}
+
+#codeinputbox {
+    border-radius: 6px;
+    outline-color: #6e026e;
+    border: 2px solid purple; /* Add a purple border to match the outline */
+    height: 30px;
+    width: 140px;
+    margin-left: 23%;
+    padding-left: 2%; /* Add padding for spacing */
+}
+
+#codeinputbox:hover {
+    background-color: purple;
+    border-color: #6e026e; /* Change border color on hover to hotpink */
+    transition: background-color 0.3s, border-color 0.3s; /* Add smooth transitions */
+}
+
+#yes1 {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 90px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#yes1:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+
+#submit1 {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 90px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#submit1:hover{
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+#no1 {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 90px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+#no1:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+.container3 h4 {
+    text-align: center;
+}
+#Proceed {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 80px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#Proceed:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+#Dontproceed {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 110px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#Dontproceed:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+#yes2 {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 80px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#yes2:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+#no2 {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 80px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#no2:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+#yes3 {
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 80px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#yes3:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+
+#no3{
+    cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 6px;
+    background-color: white;
+    color:purple;
+    height: 34px;
+    width: 80px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#no3:hover {
+    background-color: purple; /* Pink background on hover */
+    color: white; /* White text color on hover */
+    border-color: #6e026e; 
+}
+/* Rest of your CSS remains the same */
