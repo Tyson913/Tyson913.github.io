@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("no3").addEventListener("click", function () {
-        showForm("f4");
+        showForm("f6");
 
     });
 
