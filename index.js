@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function () {
     const forms = document.querySelectorAll('.container'); // Get all container elements
 
     // Function to show a form and hide the others
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to randomly position the "No" and "Don't Proceed" buttons
     function moveButtonsRandomly() {
-        const buttonsToMove = document.querySelectorAll('.no-button, #Dontproceed');
+        const buttonsToMove = document.querySelectorAll('.no-button, .no-button2, #Dontproceed');
         buttonsToMove.forEach(button => {
             const maxWidth = window.innerWidth - button.clientWidth;
             const maxHeight = window.innerHeight - button.clientHeight;
@@ -20,57 +21,68 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Attach click event listeners to "Yes" buttons
-    document.getElementById("yes1").addEventListener("click", function () {
+    document.querySelector(".yes-button[data-target='f2']").addEventListener("click", function () {
         showForm("f2");
     });
 
-    document.getElementById("yes2").addEventListener("click", function () {
+    document.querySelector(".yes-button[data-target='f4']").addEventListener("click", function () {
         showForm("f4");
     });
 
-    document.getElementById("yes3").addEventListener("click", function () {
+    document.querySelector(".yes-button[data-target='f6']").addEventListener("click", function () {
         showForm("f6");
-    
-    });
-
-    document.getElementById("no3").addEventListener("click", function () {
-        showForm("f6");
-
     });
 
     // Attach click event listener to "Submit" button
-    document.getElementById("submit1").addEventListener("click", function () {
-        
-        const passwordInput = document.getElementById("codeinputbox");
-        if (passwordInput.value.trim() === "")  {
-            // Password input is empty, display the required message
-            requiredMessage.style.display = "block";
+document.querySelector(".submit-button[data-target='f3']").addEventListener("click", function () {
+        const codeInput = document.querySelector("#codeinputbox").value;
+
+        // Check if the code is valid (equal to "143")
+        if (codeInput === "143") {
+            showForm("f3"); // Handle the submit action here
         } else {
-            showForm("f3"); // Show the next form after submitting
+            // Display an error message
+            alert("Invalid code. Please enter the correct code to proceed.");
         }
     });
-
-    // Attach click event listeners to "Proceed" and "Don't Proceed" buttons
-    document.getElementById("Proceed").addEventListener("click", function () {
+    document.querySelector(".submit-button[data-target='f5']").addEventListener("click", function () {
         showForm("f5");
     });
 
-    document.getElementById("Dontproceed").addEventListener("click", function () {
-        showForm("f5");
-        moveButtonsRandomly(); // Move buttons randomly when "Don't Proceed" is clicked
-    });
+    // Move buttons randomly when "Don't Proceed" is clicked
 
     // Attach click event listeners to "No" buttons
-    document.getElementById("no1").addEventListener("click", function () {
+    document.querySelector(".no-button[data-target='f3']").addEventListener("click", function () {
         moveButtonsRandomly(); // Move buttons randomly when "No" is clicked
     });
 
-    document.getElementById("no2").addEventListener("click", function () {
+    document.querySelector(".no-button2[data-target='f6']").addEventListener("click", function () {
+        showForm("f6");
         moveButtonsRandomly(); // Move buttons randomly when "No" is clicked
     });
 
-    document.getElementById("no3").addEventListener("click", function () {
-        moveButtonsRandomly(); // Move buttons randomly when "No" is clicked
+    document.querySelector(".d[data-target='f7']").addEventListener("click", function () {
+        showForm("f7");
     });
+
+    document.querySelector(".i[data-target='f9']").addEventListener("click", function () {
+        showForm("f9");
+    });
+
+    document.querySelector(".o[data-target='f8']").addEventListener("click", function () {
+        showForm("f8");
+    });
+
+    document.querySelector(".yes-button[data-target='f10']").addEventListener("click", function () {
+        showForm("f10");
+    });
+
+    document.querySelector(".no-button[data-target='f10']").addEventListener("click", function () {
+        showForm("f10");
+    });
+
+document.querySelector(".submit-button2[data-target='f9']").addEventListener("click", function () {
+        showForm("f9");
+    });
+
 });
