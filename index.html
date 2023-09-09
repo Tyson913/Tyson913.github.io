@@ -12,42 +12,61 @@
 
 <body>
     <h1>Answer the Following Questions:</h1>
-    <div class="container" id="f1"> <!-- Use a single container for all forms -->
+    <div class="container" id="f1">
         <h2 id="q1">Are you Mitzi Fuentes?</h2>
-        <input type="button" value="Yes" id="yes1">
-        <input type="button" value="No" id="no1">
+        <input type="button" value="Yes" class="yes-button" data-target="f2">
+        <input type="button" value="No" class="no-button" data-target="f3">
     </div>
 
-    <!-- Move the other form contents inside this container div -->
     <div class="container" id="f2" style="display: none;">
         <h2>If you're Mitzi, please enter the code I have given you.</h2>
-        <input type="password" id="codeinputbox" placeholder="Write the code here" required>
-        <input type="button" value="Submit" id="submit1">
+        <input type="password" id="codeinputbox" placeholder="Write the code here" class="p" required>
+        <input type="button" value="Submit" class="submit-button" data-target="f3">
     </div>
 
     <div class="container" id="f3" style="display: none;">
         <h2>I have something to tell you and a question to ask. Are you interested?</h2>
-        <input type="button" value="Yes" id="yes2">
-        <input type="button" value="No" id="no2">
+        <input type="button" value="Yes" class="yes-button" data-target="f4">
+        <input type="button" value="No" class="no-button" data-target="f6">
     </div>
 
     <div class="container" id="f4" style="display: none;">
         <h2>As time goes by, my love for you grows stronger than before, and I feel lucky to have you in my life. I think that this is the right time to ask you the question I have been preparing myself to ask. Click the 'Proceed' button if you're ready.</h2>
-        <input type="button" value="Proceed" id="Proceed">
-        <input type="button" value="Don't proceed" id="Dontproceed">
-    </div>
+        <input type="button" value="Proceed" class="submit-button" data-target="f5">
+        <input type="button" value="Don't proceed" class="d" data-target="f7">
+    </div>    
 
     <div class="container" id="f5" style="display: none;">
         <h2>May I court you?</h2>
-        <input type="button" value="Yes" id="yes3">
-        <input type="button" value="No" id="no3">
+        <input type="button" value="Yes" class="yes-button" data-target="f6">
+        <input type="button" value="No" class="no-button2" data-target="f6">
     </div>
     
     <div class="container" id="f6" style="display: none;">
-
         <h2>Regardless of your previous answer, please let me know your thoughts on the matter either by telling me in person or through private messaging.<br>This way I can understand if you're open to the idea of courtship.<br>I hope that you're happy right now and please always remember that I love you, and I will continue to love you always mwuah!💋.</h2>
     </div>
     
+    <div class="container"id="f7" style="display: none;">
+    <h2>May I know why?</h2>              
+    <input type="button" value="I'm not ready yet" class="i" data-target="f9">
+    <input type="button" value="Other reasons" class="o" data-target="f8"> 
+</div>
+
+    <div class="container" id="f8" style="display: none;">
+          <h2>Can you specify the reason why you don't want me to court you?</h2>
+          <textarea id="reasons" name="reason" rows="4" cols="45" class="textarea"></textarea>
+          <input type="submit" class="submit-button2" data-target="f9">
+    </div>
+    
+    <div class="container" id="f9" style="display: none;">
+          <h2>Whatever the reason is for you not wanting me to court you, could you please tell me personally or message me privately so that I can understand your reasons and we can figure it out together?</h2>
+          <input type="button" value="Yes" class="yes-button" data-target="f10">
+          <input type="button" value="No" class="no-button" 
+data-target="f10">
+    </div>
+    <div class="container" id="f10" style="display: none;">
+          <h2>Please tell me now or send me a message so I can read it immediately.</h2>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
