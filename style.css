@@ -1,173 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins&display=swap');
 * {
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    
-    background-image:url("70178a6332a955f49a0f5407f51dc68a.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;      
-    background-position: center, center;
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-    padding: 0;
-}
-
-h1 {
-    font-size: 45px;
-    padding-top: 60%;
-    text-align: center;
-    font-weight: 600;
-    color: #6e026e;
-}
-
-.container {
-    text-align: center;
-    border: 2px solid #6e026e;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 20px;
-    height: auto;
-}
-
-.container h2 {
-    text-align: center;
-    font-size: 30px;
-}
-.d {
+    font-family:'Poppins',sans-serif;
       
-      font-size: 20px;
-      cursor: pointer;
-      border: 2px solid purple;
-      border-radius: 6px;
-      background-color: white;
-      color: purple;
-      height: 45px;
-      width: 160px;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 
-.no-button,      
-.yes-button,
-.submit-button,
-.no-button2
- {
-    font-size: 20px;
-    cursor: pointer;
-    border: 2px solid purple;
-    border-radius: 6px;
-    background-color: white;
-    color: purple;
-    height: 45px;
-    width: 115px;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.yes-button:hover,
-.submit-button:hover,
-.no-button:hover,
-.no-button2:hover,
-.submit-button2:hover
-
- {
-    background-color: purple;
-    color: white;
-    border-color: #6e026e;
-}
-
-#codeinputbox {
-    border-radius: 6px;
-    outline-color: #6e026e;
-    border: 2px solid purple;
-    height: 45px;
-    width: 210px;
-    margin-left: 15%;
-    padding-left: 3%;
-}
-
-#codeinputbox:hover {
-    background-color: purple;
-    border-color: #6e026e;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-
-.textarea {
-
-      font-size: 12px;
+.bc {
       display: block;
-      border-radius: 6px;
-      outline-color: #6e026e;
-      border: 2px solid purple;
+     
+}
+
+#b {
+      transition: 1s;
+      color: black;
+      background: white;
+      margin-top: 65%;
+      margin-left: 37%;
       height: 45px;
-      width: 300px;
-      margin-left: 20%;
+      width: 90px;
+      border: 2px grey solid;
+      border-radius: 6px;
+      background: lightgrey;
+      box-shadow:  10px 10px 26px #7d7d7d,
+             -18px -18px 36px #ffffff;
+      
 }
 
-.textarea:hover {
-      
-      background-color: pink;
-      outline-color: hotpink;
+#b:hover {
       color: white;
-}  
-
-.o {
-      font-size: 20px;
-      cursor: pointer;
-      border: 2px solid purple;
-      border-radius: 6px;
-      background-color: white;
-      color: purple;
-      height: 43px;
-      width: 170px;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      background: black;
+      border: 2px black solid;
 }
 
-.i {
-      font-size: 20px;
-      cursor: pointer;
-      border: 2px solid purple;
-      border-radius: 6px;
-      background-color: white;
-      color: purple;
-      height: 43px;
-      width: 195px;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-
-}
-
-.i:hover, .o:hover {
-      background-color: purple;
+#b: active {
       color: white;
-      border-color: #6e026e;
+      background: black;
+      border: 2px black solid;
 }
-.p {
-      font-size: 20px;
+
+.bc {
+     margin-top: 0;
+     display: block;
 }
+
+#m1 {
+      text-align: center;
+      font-size: 15px;
+}
+
+#video {
       
-.submit-button2 {
-      margin-top: 2%;
-      font-size: 20px;
-      cursor: pointer;
-      border: 2px solid purple;
-      border-radius: 6px;
-      background-color: white;
-      color: purple;
-      height: 45px;
-      width: 115px;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      margin-top: 0;
+      margin-left: 0%;
+}
+#m2 {
+      text-align: center;
+      font-size: 15px;
 }
 
 
       
-
-

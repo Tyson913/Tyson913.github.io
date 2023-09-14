@@ -3,70 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <title>143</title>
+    <title>Message for my classmates</title>
+    <meta name="description" content="A brief description of your webpage">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script> 
 </head>
-
 <body>
-    <h1>Answer the Following Questions:</h1>
-    <div class="container" id="f1">
-        <h2 id="q1">Are you Mitzi Fuentes?</h2>
-        <input type="button" value="Yes" class="yes-button" data-target="f2">
-        <input type="button" value="No" class="no-button" data-target="f3">
-    </div>
-
-    <div class="container" id="f2" style="display: none;">
-        <h2>If you're Mitzi, please enter the code I have given you.</h2>
-        <input type="password" id="codeinputbox" placeholder="Write the code here" class="p" required>
-        <input type="button" value="Submit" class="submit-button" data-target="f3">
-    </div>
-
-    <div class="container" id="f3" style="display: none;">
-        <h2>I have something to tell you and a question to ask. Are you interested?</h2>
-        <input type="button" value="Yes" class="yes-button" data-target="f4">
-        <input type="button" value="No" class="no-button" data-target="f6">
-    </div>
-
-    <div class="container" id="f4" style="display: none;">
-        <h2>As time goes by, my love for you grows stronger than before, and I feel lucky to have you in my life. I think that this is the right time to ask you the question I have been preparing myself to ask. Click the 'Proceed' button if you're ready.</h2>
-        <input type="button" value="Proceed" class="submit-button" data-target="f5">
-        <input type="button" value="Don't proceed" class="d" data-target="f7">
-    </div>    
-
-    <div class="container" id="f5" style="display: none;">
-        <h2>May I court you?</h2>
-        <input type="button" value="Yes" class="yes-button" data-target="f6">
-        <input type="button" value="No" class="no-button2" data-target="f6">
+    <div class="bc">
+        <input type="button" value="Click Me" id="b" data-target="f2">
     </div>
     
-    <div class="container" id="f6" style="display: none;">
-        <h2>Regardless of your previous answer, please let me know your thoughts on the matter either by telling me in person or through private messaging.<br>This way I can understand if you're open to the idea of courtship.<br>I hope that you're happy right now and please always remember that I love you, and I will continue to love you always mwuah!💋.</h2>
+    <div id="f2" class="vc" style="display: none;">
+        <h3 id="m1">Congrats! You've been Rickrolled! 🤣</h2>
+        <video autoplay loop preload="auto" controls width="350" height="200" id="video">
+            <source src="SnapSave.io-Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4">
+        </video>
+        <h2 id="m2">Joke ra bitaw. Lab u guys 😂</h2>
+        <h2 id="m2">HAHAHAHAHAHAHA</h2>
     </div>
-    
-    <div class="container"id="f7" style="display: none;">
-    <h2>May I know why?</h2>              
-    <input type="button" value="I'm not ready yet" class="i" data-target="f9">
-    <input type="button" value="Other reasons" class="o" data-target="f8"> 
-</div>
-
-    <div class="container" id="f8" style="display: none;">
-          <h2>Can you specify the reason why you don't want me to court you?</h2>
-          <textarea id="reasons" name="reason" rows="4" cols="45" class="textarea"></textarea>
-          <input type="submit" class="submit-button2" data-target="f9">
-    </div>
-    
-    <div class="container" id="f9" style="display: none;">
-          <h2>Whatever the reason is for you not wanting me to court you, could you please tell me personally or message me privately so that I can understand your reasons and we can figure it out together?</h2>
-          <input type="button" value="Yes" class="yes-button" data-target="f10">
-          <input type="button" value="No" class="no-button" 
-data-target="f10">
-    </div>
-    <div class="container" id="f10" style="display: none;">
-          <h2>Please tell me now or send me a message so I can read it immediately.</h2>
-    </div>
-    <script src="index.js"></script>
 </body>
 </html>
