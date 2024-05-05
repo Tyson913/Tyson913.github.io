@@ -1,91 +1,67 @@
-const container1 = document.getElementsByClassName("container1")[0];
-const button1 = document.getElementById("button1");
-const button2 = document.getElementById("button2");
-const button3 = document.getElementById("button3");
-const bbc3 = document.getElementsByClassName("bbc3")[0];
-const bbc4 = document.getElementsByClassName("bbc4")[0];
-const button4 = document.getElementById("button4");
-const button9 = document.getElementById("button9");
-const audio = document.getElementById("bm");
-const word_choice1 = document.getElementById("f1");
-const word_choice2 = document.getElementById("nf1");
-const word_choice3 = document.getElementById("f2");
-const word_choice4 = document.getElementById("nf2");
-const container2 = document.getElementsByClassName("container2")[0];
-const container3 = document.getElementsByClassName("container3")[0];
-const container4 = document.getElementsByClassName("container4")[0];
+window.addEventListener('scroll', function () {
+    try {
+        const scrollPercentage = (window.scrollY / document.body.scrollHeight) * 100;
+        console.log('Scroll Percentage:', scrollPercentage);
 
-button1.addEventListener("mouseover", function () {
-    button1.style.backgroundColor = "#35595e";
-    word_choice1.style.color = "black";
-});
+        const main = document.querySelector('body');
+        const footer = document.querySelector('.footer');
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        const distanceToFooter = footerTop - windowHeight;
 
-button1.addEventListener("mouseout", function () {
-    button1.style.backgroundColor = "#3a5358";
-    word_choice1.style.color = "white";
-});
-
-button2.addEventListener("mouseover", function () {
-    button2.style.backgroundColor = "#35595e";
-    word_choice2.style.color = "black";
-});
-
-button2.addEventListener("mouseout", function () {
-    button2.style.backgroundColor = "#3a5357";
-    word_choice2.style.color = "white";
-});
-
-button3.addEventListener("mouseover", function () {
-    button3.style.backgroundColor = "#35595e";
-    word_choice3.style.color = "black";
-});
-
-button3.addEventListener("mouseout", function () {
-    button3.style.backgroundColor = "#3a5357";
-    word_choice3.style.color = "white";
-});
-
-button4.addEventListener("mouseover", function () {
-    button4.style.backgroundColor = "#35595e";
-    word_choice4.style.color = "black";
-});
-
-button4.addEventListener("mouseout", function () {
-    button4.style.backgroundColor = "#3a5357";
-    word_choice4.style.color = "white";
-});
-
-button9.addEventListener("click", function () {
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
+        // Check if scrolled over the footer
+        if (distanceToFooter <= 0) {
+            console.log('Scrolled over the footer');
+            main.style.backgroundImage = 'none';
+        } else if (scrollPercentage >= 15) { // Apply custom background image properties if scrolled past 15%
+            console.log('Applying custom background image properties');
+            main.style.backgroundImage = 'url("b71f31fb-5156-452c-871c-94bed775d424-removebg-preview (1).png")';
+            main.style.backgroundRepeat = 'no-repeat';
+            main.style.backgroundPosition = '50% 50%';
+            main.style.backgroundSize = '30% 60%';
+        } else { // Revert to original background image properties
+            console.log('Reverting to original background image properties');
+            main.style.backgroundImage = 'url("b71f31fb-5156-452c-871c-94bed775d424-removebg-preview (1).png")';
+            main.style.backgroundRepeat = '';
+            main.style.backgroundColor = '';
+            main.style.backgroundPosition = '';
+            main.style.backgroundSize = '';
+            main.style.opacity = '1';
+        }
+    } catch (error) {
+        console.error('Error:', error);
     }
 });
 
-button1.addEventListener("click", function () {
-    if (container2.style.display === "none" && bbc3.style.display === "none" && bbc4.style.display === "none") {
-        container2.style.display = "block";
-        bbc3.style.display = "block";
-        bbc4.style.display = "block";
-        container1.style.display = "none";
-        button1.style.display = "none";
-        button2.style.display = "none";
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    // Add event listener to search button
+    document.getElementById("search-button").addEventListener("click", function () {
+        // Display loader
+        document.getElementById("loader").style.display = "block";
+        
+        // Simulate asynchronous data fetching
+        setTimeout(function () {
+            // Hide loader after a delay (simulating data fetching)
+            document.getElementById("loader").style.display = "none";
+
+            let bookData = [
+                "123,The Great Gatsby,F. Scott Fitzgerald,Available",
+                "456,To Kill a Mockingbird,Harper Lee,Unavailable",
+                // Add more book data as needed
+            ];
+
+            // Call the displayResult function with the book data
+            document.getElementById("table-header").style.display = "";
+        }, 2000);
+    });
+    var dropdown = document.getElementById('s1');
+
+// Function to make dropdown clickable
+function makeDropdownClickable() {
+    dropdown.removeAttribute('disabled'); // Remove the 'disabled' attribute
+}
+
+// Call the function to make dropdown clickable
+makeDropdownClickable();
+
 });
-
-button3.addEventListener("click", function () {
-    if (container3.style.display === "none") {
-        container3.style.display = "block";
-        container2.style.display = "none";
-        button3.style.display = "none";
-        button4.style.display = "none";
-        // After 5 seconds, switch to container4 and hide container3
-        setTimeout(() => {
-            container4.style.display = "block";
-            container3.style.display = "none";
-        }, 5000);
-    }
-});
-
-
