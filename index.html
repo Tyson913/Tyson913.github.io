@@ -6,35 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://lottie.host/embed/2296790f-6ed2-4a6f-af92-ba2d503d0e6b/q3s8HyDBBx.json">
-
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head>
 
 <body>
 
   <div class="header">
     <span class="logo1">
-      <img src="b71f31fb-5156-452c-871c-94bed775d424-removebg-preview (1).png" width="55" height="55">
+      <img src="b71f31fb-5156-452c-871c-94bed775d424-removebg-preview (1).png"  width="280" height="280">
     </span>
     <span class="logo2">
-        <img src="437737406_307902712203980_4521046529613550026_n-removebg-preview.png.png" width="250" height="250">
+      <img src="437737406_307902712203980_4521046529613550026_n-removebg-preview.png">
     </span>
-    <input type="button" value="Costumize" id="b1">
+    <input type="button" value="Show Table" id="b1">
   </div>
   <div class="search-bar">
     <select id="search-by">
-      <option value="book_number">Book Number</option>
+      <option value="book_number">Account No.</option>
       <option value="book_name">Book Name</option>
       <option value="author">Author</option>
       <option value="status">Status</option>
     </select>
     <input type="text" id="search-input" placeholder="Search..." required />
     <button id="search-button">
-      <i class="fas fa-search lg style=" color:white;"></i>
+      <i class="fas fa-search lg" style="color:white;"></i>
     </button>
   </div>
 
-  </div>
   <div class="guidebox">
     <div class="textcon">
       <h2 id="h">How to Use:</h2>
@@ -60,8 +58,8 @@
         <span class="arrows">
           <i class="fa-solid fa-arrow-right fa-lg" style="color: #008000;"></i>
         </span>
-        <p id="third">Third step: Click the search button, the one with the
-          magnifying glass icon.
+        <p id="third">Third step: Click 'Enter' or the search button (the one with the
+          magnifying glass icon).
         </p>
       </div>
     </div>
@@ -73,8 +71,8 @@
     <div class="rbl2"></div>
     <div class="resultbox">
       <div class="rbp"></div>
-      <div class="tableres">
-        <div class="table_header" id= "table-header">
+      <div class="tableres" style="display: none;">
+        <div class="table_header" id= "table-header" style="display: none;">
           <div class="header1">
             <h4>Account No.</h4>
           </div>
@@ -90,41 +88,67 @@
         </div>
         <div class="datarow">
           <div class="Account_No">
-            <p>001</p>
+            <p></p>
           </div>
           <div class="Book_Name">
-            <p>Harry Potter and the Sorcerers Stone</p>
+            <p></p>
           </div>
           <div class="Author">
-            <p>JK Rowlings</p>
+            <p></p>
           </div>
-          <div class="Status">
+          <div class="Status" style="display: none;">
             <div class="lingin"></div>
-              <select id="s1">
-                <option>Available</option>
-                <option>Unavailable</option>
-              </select>
+            <div class="stat">
+              <p id="p1">Available</p>
+              <i class="fa-solid fa-book-open fa-sm" style="color: #008000;" id="bookgreen"></i>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-  <dotlottie-player src="https://lottie.host/2296790f-6ed2-4a6f-af92-ba2d503d0e6b/q3s8HyDBBx.json"
-    background="transparent" speed="1" style="width: 390px; height: 290px;" loop autoplay
-    id="loader"></dotlottie-player>
-  <div class="wait" style="display: none;">
-    <p id="are">Are you sure you really want to change
-      it?
-    </p>
-    <p id="note">Note: Inappropriately changing this
-      might cause confusion to the school's librarian
-    </p>
-    <input type="button" value="Yes" id="b2">
-    <input type="button" value="No" id="b3">
+  <div class="loader" style="display: none;">
+    <dotlottie-player src="https://lottie.host/2608559f-8f75-4fbb-807a-42aab714e748/Jt5ldkKXQ2.json" background="transparent" speed="1" style="width: 300px; height: 250px;" loop autoplay id="loader"></dotlottie-player>
   </div>
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+  <div class="error-message2" style="display: none;">Please select the correct category</div>
+  <div class="success-search" style="display:none;">Found it!</div>
+
+  <button id="b4">Show Book Data</button>
+
+  <div class="footer">
+    <div class="lg3">
+      <img src="b71f31fb-5156-452c-871c-94bed775d424-removebg-preview (1).png" width="70" height="70" id="l3">
+      <h2 id="fh">San Nicolas High School of Anao-Aon Incorporated</h2>
+      <img src="439319885_397899706456186_1846358435511738308_n-removebg-preview.png" width="70" height="70" id="l4">
+    </div>
+    <div class="lg4">
+      <div class="buttons">
+        <input type="button" value="Back to the Top " id="bt">
+        <input type="button" value="Book Data" id="bd">
+      </div>
+      <h3 id="fl">Follow Us On:</h3>
+      <div class="iconscon">
+        <div class="fb">
+          <i class="fa-brands fa-facebook fa-xl" style="color: #1877f2;"></i>
+        </div>
+        <div class="insta">
+          <i class="fa-brands fa-instagram fa-xl" style="color: #f52443;"></i>
+        </div>
+        <div class="email">
+          <i class="fa-solid fa-envelope fa-xl" style="color: #ca8544;"></i>
+        </div>
+      </div>
+      <p id="info">This project is for the completion of the Empowerment Technology subject for Grade 12, Batch 2023-2024.</p>
+      <div class="lastps">
+        <p id="c">© 2024 San Nicolas High School of Anao-Aon Incorporated</p>
+        <p id="alr">All rights reserved 2024</p>
+      </div>
+    </div>
+  </div>
   <script src="https://kit.fontawesome.com/9ffc3d92a4.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="index.js" defer></script>
 </body>
 
