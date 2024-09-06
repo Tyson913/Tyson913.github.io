@@ -1,155 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        * {
+            font-family: 'Poppins';
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            left: 0;
+            top: 0;
+            padding-left: 2%;
+            display: flex;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+        }
+        .music_disc_container {
+            min-height: 350px;
+            display: flex;
+            justify-content: center;
+            width: 700px;
+            z-index: -3;
+            border-radius: 10px;
+            background-color: grey;
+        }
+        
+
+        .music_disc_container img {
+            transform-origin: center center;
+        }
+
+        .rotate {
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
-
 <body>
-
-  <div class="header">
-    <span class="logo1">
-      <img src="b71f31fb-5156-452c-871c-94bed775d424-removebg-preview (1).png"  width="280" height="280">
-    </span>
-    <span class="logo2">
-      <img src="437737406_307902712203980_4521046529613550026_n-removebg-preview.png">
-    </span>
-    <input type="button" value="Show Table" id="b1">
-  </div>
-  <div class="search-bar">
-    <select id="search-by">
-      <option value="book_number">Account No.</option>
-      <option value="book_name">Book Name</option>
-      <option value="author">Author</option>
-      <option value="status">Status</option>
-    </select>
-    <input type="text" id="search-input" placeholder="Search..." required />
-    <button id="search-button">
-      <i class="fas fa-search lg" style="color:white;"></i>
-    </button>
-  </div>
-
-  <div class="guidebox">
-    <div class="textcon">
-      <h2 id="h">How to Use:</h2>
-      <div class="fsc">
-        <span class="arrows">
-          <i class="fa-solid fa-arrow-right fa-lg" style="color: #008000;"></i>
-        </span>
-        <p id="first">First step: Select the category of the book you want to
-          search (book number, book name, author, and
-          status) from the dropdown menu.
-        </p>
-      </div>
-      <div class="ssc">
-        <span class="arrows">
-          <i class="fa-solid fa-arrow-right fa-lg" style="color: #008000;"></i>
-        </span>
-        <p id="second">Second step: Write the specific information of the book
-          you want to search, according to the
-          category you have chosen from the dropdown menu.
-        </p>
-      </div>
-      <div class="tsc">
-        <span class="arrows">
-          <i class="fa-solid fa-arrow-right fa-lg" style="color: #008000;"></i>
-        </span>
-        <p id="third">Third step: Click 'Enter' or the search button (the one with the
-          magnifying glass icon).
-        </p>
-      </div>
+    <div class="header">
+        <h2>My Intro</h2>
+        <img src="Premium_Vector___Simple_Music_Logo_Design_Concept_Vector-removebg.png" alt=""  width="80">
     </div>
-  </div>
-  <div class="result-container">
-    <div class="rbl">
-      <h4 id="rl">Result</h4>
-    </div>
-    <div class="rbl2"></div>
-    <div class="resultbox">
-      <div class="rbp"></div>
-      <div class="tableres" style="display: none;">
-        <div class="table_header" id= "table-header" style="display: none;">
-          <div class="header1">
-            <h4>Account No.</h4>
-          </div>
-          <div class="header2">
-            <h4>Book Name</h4>
-          </div>
-          <div class="header3">
-            <h4>Author</h4>
-          </div>
-          <div class="header4">
-            <h4>Status</h4>
-          </div>
-        </div>
-        <div class="datarow">
-          <div class="Account_No">
-            <p></p>
-          </div>
-          <div class="Book_Name">
-            <p></p>
-          </div>
-          <div class="Author">
-            <p></p>
-          </div>
-          <div class="Status" style="display: none;">
-            <div class="lingin"></div>
-            <div class="stat">
-              <p id="p1">Available</p>
-              <i class="fa-solid fa-book-open fa-sm" style="color: #008000;" id="bookgreen"></i>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="loader" style="display: none;">
-    <dotlottie-player src="https://lottie.host/2608559f-8f75-4fbb-807a-42aab714e748/Jt5ldkKXQ2.json" background="transparent" speed="1" style="width: 300px; height: 250px;" loop autoplay id="loader"></dotlottie-player>
-  </div>
 
-  <div class="error-message2" style="display: none;">Please select the correct category</div>
-  <div class="success-search" style="display:none;">Found it!</div>
-
-  <button id="b4">Show Book Data</button>
-
-  <div class="footer">
-    <div class="lg3">
-      <img src="b71f31fb-5156-452c-871c-94bed775d424-removebg-preview (1).png" width="70" height="70" id="l3">
-      <h2 id="fh">San Nicolas High School of Anao-Aon Incorporated</h2>
-      <img src="439319885_397899706456186_1846358435511738308_n-removebg-preview.png" width="70" height="70" id="l4">
+    <div class="main">
+        <div class="info" style="position: absolute; white-space: nowrap; top: 12%; line-height: 0.5em; left: 401px;">
+            <h2>Cj E. Banluta</h2>
+            <h4>BSCS-1A</h4>
+        </div>
+        <div class="music_disc_container">
+            <img id="vinyl" style="position: absolute; z-index: -2;;" src="Recorder_Vector_Hd_PNG_Images__Record_Material__Vinyl_Records__Record__Vinyl_PNG_Image_For_Free_Download-removebg-preview.png" height="370">
+            <img id="disc" src="458313269_1011258514078836_6150213419072225220_n.jpg" height="140" style="border-radius: 50%; margin-top: 100px;">
+        </div>
+        <audio id="audio" src="Intro .mp3" controls style="position: absolute; top: 75%; left: 39.7%;"></audio>
     </div>
-    <div class="lg4">
-      <div class="buttons">
-        <input type="button" value="Back to the Top " id="bt">
-        <input type="button" value="Book Data" id="bd">
-      </div>
-      <h3 id="fl">Follow Us On:</h3>
-      <div class="iconscon">
-        <div class="fb">
-          <i class="fa-brands fa-facebook fa-xl" style="color: #1877f2;"></i>
-        </div>
-        <div class="insta">
-          <i class="fa-brands fa-instagram fa-xl" style="color: #f52443;"></i>
-        </div>
-        <div class="email">
-          <i class="fa-solid fa-envelope fa-xl" style="color: #ca8544;"></i>
-        </div>
-      </div>
-      <p id="info">This project is for the completion of the Empowerment Technology subject for Grade 12, Batch 2023-2024.</p>
-      <div class="lastps">
-        <p id="c">© 2024 San Nicolas High School of Anao-Aon Incorporated</p>
-        <p id="alr">All rights reserved 2024</p>
-      </div>
-    </div>
-  </div>
-  <script src="https://kit.fontawesome.com/9ffc3d92a4.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="index.js" defer></script>
+    <script>
+        const audio = document.getElementById('audio');
+        const vinyl = document.getElementById('vinyl');
+        const disc = document.getElementById('disc');
+
+        // Function to start rotation
+        function startRotation() {
+            disc.classList.add('rotate');
+        }
+
+        // Function to stop rotation
+        function stopRotation() {
+            disc.classList.remove('rotate');
+        }
+
+        // Event listener for when the audio starts playing
+        audio.addEventListener('play', startRotation);
+
+        // Event listener for when the audio ends
+        audio.addEventListener('ended', stopRotation);
+
+        // Optional: if the audio is paused or stopped by the user, stop the rotation
+        audio.addEventListener('pause', stopRotation);
+    </script>
 </body>
 
 </html>
