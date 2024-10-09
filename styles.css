@@ -171,7 +171,8 @@ body {
     display: flex;
     flex-direction: row;
     text-align: center;
-    gap: 2.1rem;
+    margin-left: 30rem;
+    gap: 3.4rem;
 
 }
 .slider ul div {
