@@ -232,6 +232,9 @@ body {
     border: 2px solid var(--secondarycol);
     transform: rotate(45deg); 
 }
+.indics:hover {
+    background-color: var(--tertiarycol);
+}
 .horizontalscrollindic {
     position: fixed;
     top: 11rem;
