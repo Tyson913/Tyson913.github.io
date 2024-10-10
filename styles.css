@@ -171,7 +171,7 @@ body {
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-left: 30rem;
+    margin-left: 29rem;
     gap: 3.5rem;
 
 }
@@ -263,8 +263,8 @@ body {
 }
 @keyframes bigger {
     from {
-        width: 45px ;
-        height: 45px ;
+        width: 45px;
+        height: 45px;
     }
     to {
         width: 55px;
