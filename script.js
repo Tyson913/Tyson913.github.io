@@ -3,7 +3,6 @@ const button1 = document.getElementById('menubttn1m');
 const button2 = document.getElementById('menubttn2m');
 const sidebar = document.querySelector('.sidebar');
 
-
 let isVisible = false; // Track visibility state
 
 const toggleSidebar = () => {
@@ -37,7 +36,7 @@ const pagescrollindic = document.querySelectorAll(".scroll-numindic-circ");
 
 pagescrollindic.forEach((indicator) => {
   indicator.addEventListener('click', function() {
-    indicator.style.border = '3px solid #ECDFCC';
+    indicator.style.border = '4px solid #3C3D37';
     indicator.style.backgroundColor = '#697565';
   });
 });
