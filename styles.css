@@ -233,7 +233,8 @@ body {
     transform: rotate(45deg); 
 }
 .indics:hover {
-    background-color: var(--tertiarycol);
+    color: var(--tertiarycol);
+    background-color: var(--secondarycol);
 }
 .horizontalscrollindic {
     position: fixed;
