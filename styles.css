@@ -260,7 +260,7 @@ body {
     font-size: var(--pfsize1);
     font-weight: 750;
     background-color: var(--mainbgcol);
-
+    transition: bigger 3s ease;
 }
 @keyframes bigger {
     from {
