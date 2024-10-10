@@ -36,7 +36,8 @@ const pagescrollindic = document.querySelectorAll(".scroll-numindic-circ");
 
 pagescrollindic.forEach((indicator) => {
   indicator.addEventListener('click', function() {
-    indicator.style.border = '4px solid #3C3D37';
+    indicator.style.border = '4px solid #ECDFCC';
+    indicator.style.color = '#3C3D37';
     indicator.style.backgroundColor = '#697565';
   });
 });
