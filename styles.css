@@ -257,10 +257,9 @@ body {
     border: 3px solid var(--tertiarycol);
     color: var(--quaternarycol);
     font-family: "Inter";
-    font-size: var(--pfsize1);
-    font-weight: 750;
+    font-size: 20px;
+    font-weight: 800;
     background-color: var(--mainbgcol);
-    transition: bigger 3s ease;
 }
 @keyframes bigger {
     from {
