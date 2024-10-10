@@ -222,8 +222,13 @@ body {
 
 }
 .indics {
-    width: 5px;           
-    height: 5px;         
+    width: 100px;           
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;       
     border: 2px solid var(--secondarycol);
     transform: rotate(45deg); 
 }
