@@ -36,8 +36,8 @@ const pagescrollindic = document.querySelectorAll(".scroll-numindic-circ");
 
 pagescrollindic.forEach((indicator) => {
   indicator.addEventListener('click', function() {
-    indicator.style.animation = 'bigger 3s ease';
+    indicator.
     indicator.style.border = 'transparent';
-    indicator.style.background = 'linear-gradient(to top, #697565, #3C3D37)';
+    indicator.style.background = 'linear-gradient(to bottom, #697565, #3C3D37)';
   });
 });
