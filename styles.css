@@ -161,7 +161,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 165spx;
     height: 50px;
     overflow: hidden;
     padding-left: 10px;
@@ -214,7 +214,7 @@ body {
     justify-content: center;
     top: 2.9rem;
     left: .4rem;
-    position: absolute;
+    position: relative;
     width: 210px;
     border-radius: 20px;
     align-items: center;
@@ -223,7 +223,7 @@ body {
 
 }
 .indics {
-    width: 100px;           
+    width: 120px;           
     height: 20px;
     border-radius: 20px;
     display: flex;
@@ -231,7 +231,7 @@ body {
     justify-content: center;
     align-items: center;       
     border: 2px solid var(--secondarycol);
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
 }
 .indics:hover {
     color: var(--tertiarycol);
