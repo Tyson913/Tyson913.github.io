@@ -252,8 +252,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border: 3px solid var(--tertiarycol);
     color: var(--quaternarycol);
     font-family: "Inter";
@@ -262,6 +262,17 @@ body {
     background-color: var(--mainbgcol);
 
 }
+@keyframes bigger {
+    from {
+        width: 45px ;
+        height: 45px ;
+    }
+    to {
+        width: 55px;
+        height: 55px;
+    }
+}
+
 
 .mid-diamondcon {
     width: 5px;
@@ -269,3 +280,4 @@ body {
     border: 2px solid var(--secondarycol);
     transform: rotate(45deg); 
 }
+
