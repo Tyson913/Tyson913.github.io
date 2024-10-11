@@ -174,7 +174,6 @@ body {
     text-align: center;
     margin-left: 28rem;
     gap: 3.5rem;
-
 }
 .slider ul div {
     text-decoration: none;
@@ -207,7 +206,6 @@ body {
     background-color: var(--secondarycol);
 }
 
-
 .hypertxtindic {
     display: flex;
     align-items: center;
@@ -215,12 +213,11 @@ body {
     top: 2.9rem;
     left: .4rem;
     position: relative;
-    width: 150px;
+    width: 90px;
     border-radius: 20px;
     align-items: center;
     height: 15px;
     gap: 46px;
-
 }
 .indics {
     width: 120px;           
@@ -244,7 +241,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 110px;
+    width: 120px;
     height: 480px;
 }
 .scroll-indic-elems {
