@@ -158,6 +158,8 @@ body {
 }
 .hypertxtcon {
     border-radius: 20px;
+    height: 35px;
+    width: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
