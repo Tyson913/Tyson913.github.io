@@ -145,7 +145,7 @@ body {
 }
 .pagenavelements {
     height: 40px;
-    border: 1px solid var(--tertiarycol);
+    width: 230px;
     display: flex;
     align-items: center;
     border-radius: 20px;
