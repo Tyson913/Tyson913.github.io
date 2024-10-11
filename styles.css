@@ -156,7 +156,13 @@ body {
     padding-right: 24px;
 
 }
-
+.hypertxtcon {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 .slider {
     display: flex;
     justify-content: center;
