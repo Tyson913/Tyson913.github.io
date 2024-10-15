@@ -228,9 +228,8 @@ body {
     gap: 46px;
 }
 .indics {
-    width: 140px;           
+    width: 20px;           
     height: 20px;
-    border-radius: 20px;
     display: flex;
     padding: 10px;
     justify-content: center;
