@@ -228,7 +228,7 @@ body {
     gap: 46px;
 }
 .indics {
-    width: 120px;           
+    width: 140px;           
     height: 20px;
     border-radius: 20px;
     display: flex;
@@ -260,7 +260,6 @@ body {
     gap: 4.5rem;
     width: 90%;
     height: 97%;
-
 }
 .scroll-numindic-circ {
     border-radius: 50%;
@@ -276,8 +275,6 @@ body {
     font-weight: 800;
     background-color: var(--mainbgcol);
 }
-
-
 .mid-diamondcon {
     width: 5px;
     height: 5px;
