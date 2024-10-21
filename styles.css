@@ -136,7 +136,11 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.bttnconpc {
+    width: 200px;
+    height: 80%;
+    border: 1px solid var(--secondarycol);
+}
 
 .horizontalscrollindic {
     position: fixed;
