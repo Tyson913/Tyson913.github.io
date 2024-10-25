@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --mainbgcol: #1E201E;
+    --firstcol: #1E201E;
     --secondarycol: #3C3D37;
     --tertiarycol: #697565;
     --quaternarycol: #ECDFCC;
@@ -29,156 +29,27 @@ body {
     margin: 0%;
     height: 100vh;
     -webkit-text-size-adjust: none;
-    background-color: var(--mainbgcol);
 }
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-  
 .wrapper {
-    overflow-x: hidden;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 100%;
-    top: 0%;
-    left: 0%;
 }
 .head {
     width: 100%;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.headcon {
-    position: relative;
-    top: 0;
-    display: flex;
-    align-items: center;
-    background-color: var(--mainbgcol);
-    font-family: var(--headerfont);
-    font-size: var(--hfsize);
-    height: 95px;
-    z-index: 9999;
-    padding-right: .5rem;
-    width: 28rem;
-}
-.logocon {
-    display: flex;
-    align-items: center;
-    justify-content: center !important;
-    width: 140px;
     height: 70px;
-    position: relative;
 }
-.logocon img {
-    margin-left: -1.8rem;
-}
-.head h1 {
-    letter-spacing: 3px;
-    margin-left: -1.6rem;
-    background: var(--headerlogocol);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    mask-size: 100% 100%;
-}
-.bttncon1mobile, .bttncon2mobile {
-    width: 65px;
-    padding: 5px;
-    right: 2rem;
-    top: 1rem;
+.headcon1 {
+    background-color: var(--firstcol);
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
+    height: 60px;
+    border: 1px solid red;
 }
-#menubttn1m{
-    height: 37px;
-    width: 57px;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid var(--tertiarycol);
-    background-color: var(--mainbgcol);
-}
-#menubttn1m:hover, #menubttn2m {
-    background-color: var(--tertiarycol);
-    border: 3px solid var(--secondarycol);
-}
-#menubttn1m:hover {
-    transition: transform 0.5s ease;
+.headcon1 img {
+    border: 1px solid rebeccapurple;
 }
 
 
-#menubttn2m {
-    height: 37px;
-    width: 57px;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bttnconpc {
-    width: 200px;
-    height: 80%;
-    border: 1px solid var(--secondarycol);
-}
-
-.horizontalscrollindic {
-    position: fixed;
-    top: 11rem;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 480px;
-}
-.scroll-indic-elems {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4.5rem;
-    width: 90%;
-    height: 97%;
-}
-.scroll-numindic-circ {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    border: 3px solid var(--tertiarycol);
-    color: var(--quaternarycol);
-    font-family: "Poppins";
-    font-size: 20px;
-    font-weight: 800;
-    background-color: var(--mainbgcol);
-}
-.mid-diamondcon {
-    width: 5px;
-    height: 5px;
-    border: 2px solid var(--secondarycol);
-    transform: rotate(45deg); 
-}
 
