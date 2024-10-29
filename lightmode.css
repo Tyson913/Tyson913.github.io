@@ -8,18 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root {
-    --firstcol: #1E201E;
-    --secondarycol: #3C3D37;
-    --tertiarycol: #697565;
-    --quaternarycol: #ECDFCC;
-    --headerfont: "Patua One";
-    --hfont: "Signika Negative";
-    --pfont: "Noto Sans JP";
-    --hfsize: 22px;
-    --pfsize1: 16px;
-    --pfsize2: 18px;
-}
 /* 
     Color Schemes:
 
@@ -145,5 +133,3 @@ body {
 @media only screen and (min-width: 1280px) {}
 
 @media only screen and (min-width: 1536px) {}
-
-
